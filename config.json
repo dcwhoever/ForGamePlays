@@ -69,7 +69,6 @@
           {
             "id": "${WOSHOUMIMA}",
             "level": 0
-
           }
         ],
         "decryption": "none"
@@ -86,7 +85,8 @@
         "enabled": true,
         "destOverride": [
           "http",
-          "tls"
+          "tls",
+          "quic"
         ]
       }
     },
@@ -113,7 +113,8 @@
         "enabled": true,
         "destOverride": [
           "http",
-          "tls"
+          "tls",
+          "quic"
         ]
       }
     },
@@ -140,7 +141,8 @@
         "enabled": true,
         "destOverride": [
           "http",
-          "tls"
+          "tls",
+          "quic"
         ]
       }
     }
