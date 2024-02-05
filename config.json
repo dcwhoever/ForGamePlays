@@ -54,10 +54,6 @@
             "path": "/${LUJING}-trojanws",
             "dest": "@trojan-ws",
             "xver": 2
-          },
-          {
-            "path": "/${LUJING}-ssws",
-            "dest": 53005
           }
         ]
       },
@@ -127,7 +123,7 @@
       "settings": {
         "clients": [
           {
-            "password": "desdemona99",
+            "password": "${WOSHOUMIMA}",
             "level": 0
           }
         ]
@@ -138,31 +134,6 @@
         "wsSettings": {
           "acceptProxyProtocol": true, 
           "path": "/${LUJING}-trojanws" 
-        }
-      },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ]
-      }
-    },
-    {
-      "tag": "shadowsocks-ws",
-      "listen": "127.0.0.1",
-      "port": 53005,
-      "protocol": "shadowsocks",
-      "settings": {
-        "method": "chacha20-ietf-poly1305",
-        "password": "desdemona99",
-        "level": 0
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "path": "/${LUJING}-ssws"
         }
       },
       "sniffing": {
