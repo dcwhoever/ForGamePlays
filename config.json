@@ -62,35 +62,7 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "certificates": [
-            {
-              "ocspStapling": 3600, 
-              "certificateFile": "/etc/ssl/example.com/domain.pem", 
-              "keyFile": "/etc/ssl/example.com/domain-key.pem" 
-            },
-            {
-              "ocspStapling": 3600,
-              "certificateFile": "/etc/ssl/behindcdn.com/domain.pem",
-              "keyFile": "/etc/ssl/behindcdn.com/domain-key.pem"
-            }
-          ],
-          "minVersion": "1.2", 
-          "cipherSuites": "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256", 
-          "alpn": [
-            "h2", 
-            "http/1.1" 
-          ]
-        }
-      },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": [
-          "http",
-          "tls"
-        ]
+        "network": "tcp"
       }
     },
     {
